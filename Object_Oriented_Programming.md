@@ -19,7 +19,7 @@ objects that contain data and behaviour.
 ## 2. Class and Object
 
 -   **Class:** A blueprint that describes the attributes and methods its
-    objects can have. A class is blueprint or template to create objects
+    objects can have. A class is blueprint or template to create objects.
 -   **Object:** A particular instance created from a class.
 
 ```python
