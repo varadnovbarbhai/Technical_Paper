@@ -214,6 +214,12 @@ dog.bark()
 
 ```
 
+Here:
+- Animal is the parent class.
+- Dog is the child class.
+- Dog inherits the eat() method.
+Remember: Inheritance = Code reusability.
+
 ### Common inheritance patterns
 | Type | Meaning |
 | :--- | :--- |
