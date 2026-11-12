@@ -112,49 +112,6 @@ separately and could forget required data.
 responsible for creating it. In everyday application code, you usually
 write `__init__()`.
 
-## 5. Instance Variables and Class Variables
-
-### Instance variables
-
-Belong to an individual object. Different objects can store different
-values.
-
-### Class variables
-
-Declared in the class body and shared through the class by its
-instances.
-
-```python
-class Employee:
-    company = "MountBlue"  # class variable
-
-    def __init__(self, name, salary):
-        self.name = name       # instance variable
-        self.salary = salary   # instance variable
-
-
-first = Employee("Jyothish", 30000)
-second = Employee("Rahul", 40000)
-
-print(first.name, first.salary, first.company)
-print(second.name, second.salary, second.company)
-```
-
-**Output**
-
-```text
-Jyothish 30000 MountBlue
-Rahul 40000 MountBlue
-```
-
-Changing `Employee.company` changes the class value seen by instances
-that have not shadowed it. Assigning `first.company = "Google"`
-creates/updates an instance attribute for `first`; it does not change
-the class variable.
-
-**Use:** Instance variables store object-specific information. Class
-variables store information common to the class.
-
 
 # Part 2: The Four Pillars of OOP
 
