@@ -68,7 +68,7 @@ student2.display()
 **Output**
 
 ```text
-Jyothish
+Raj
 Rahul
 ```
 
@@ -94,8 +94,8 @@ class Student:
         print(f"{self.name}, {self.age}")
 
 
-student = Student("Jyothish", 23)
-student.display()
+student1 = Student("Jyothish", 23)
+student1.display()
 ```
 
 **Output**
