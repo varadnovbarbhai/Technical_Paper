@@ -160,19 +160,40 @@ variables store information common to the class.
 
 ## 7. Encapsulation
 
-**Meaning:** Keep related data and the methods that operate on it
-together, and control how important data is changed.
+Pillar 1: Encapsulation
+Definition: Wrapping data and methods together inside a single unit (class), while controlling access to the data.
 
-Python does not enforce Java-style access modifiers. It uses naming
-conventions:
+Real-life example: ATM machine.
 
--   `name` -- public; normal access.
--   `_balance` -- non-public by convention; intended for internal use.
--   `__balance` -- name-mangled by Python to reduce accidental
-    access/name clashes. It is not truly private.
 
-**Scenario:** Prevent a bank balance from being reduced through an
-invalid withdrawal.
+You can:
+- Check your balance.
+- Withdraw money.
+- Deposit money.
+But you cannot directly access the internal banking system.
+
+
+class BankAccount:
+
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+
+
+account = BankAccount(1000)
+
+account.deposit(500)
+
+print(account.get_balance())
+
+
+
 
 ```python
 class BankAccount:
@@ -198,42 +219,42 @@ print(account.get_balance())
 
 **Output:** `700`
 
-**Why?** The class provides controlled operations instead of asking
-outside code to change the balance directly.
-
+Important points:
+- __balance uses name mangling to discourage direct access.
+- We access the balance through methods.
+- This helps protect the object's internal state.
 ### Property -- controlled attribute access
 
-`@property` lets a method be accessed like an attribute. It is commonly
-used for validation.
 
-```python
-class Product:
-    def __init__(self, price):
-        self.price = price
-
-    @property
-    def price(self):
-        return self._price
-
-    @price.setter
-    def price(self, value):
-        if value < 0:
-            raise ValueError("Price cannot be negative")
-        self._price = value
-
-
-product = Product(500)
-product.price = 750
-print(product.price)
-```
-
-**Output:** `750`
 
 ## 8. Inheritance
 
-**Meaning:** A child class reuses or extends the attributes and methods of a parent class.
+**Meaning:** nheritance allows one class to acquire properties and methods from another class.
 
-**Why?** Avoid repeating common behaviour and represent an "is-a" relationship.
+Real-life example:
+- Animal → Parent class.
+- Dog → Child class.
+- Cat → Child class.
+
+  ```
+  class Animal:
+
+    def eat(self):
+        print("Animal is eating")
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Dog is barking")
+
+
+dog = Dog()
+
+dog.eat()
+dog.bark()
+
+```
 
 ### Common inheritance patterns
 | Type | Meaning |
