@@ -186,15 +186,15 @@ Important points:
 
 ## 8. Inheritance
 
-**Meaning:** nheritance allows one class to acquire properties and methods from another class.
+**Meaning:** Inheritance allows one class to acquire properties and methods from another class.
 
 Real-life example:
 - Animal → Parent class.
 - Dog → Child class.
 - Cat → Child class.
 
-  ```
-  class Animal:
+ ```python
+class Animal:
 
     def eat(self):
         print("Animal is eating")
@@ -210,6 +210,7 @@ dog = Dog()
 
 dog.eat()
 dog.bark()
+```
 
 ```
 
