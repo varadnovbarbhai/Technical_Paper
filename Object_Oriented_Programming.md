@@ -58,7 +58,7 @@ class Student:
         print(self.name)
 
 
-student1 = Student("Jyothish")
+student1 = Student("Raj")
 student2 = Student("Rahul")
 
 student1.display()
