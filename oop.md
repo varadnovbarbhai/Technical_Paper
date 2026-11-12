@@ -4,7 +4,12 @@ OOPs in Python
 "Suppose we want to build a student management system. We have 1,000 students. How would we store their information?"
 
 One approach is using variables:
-student1_name = "Rahul"student1_age = 22student2_name = "Amit"student2_age = 23
+
+student1_name = "Rahul"
+student1_age = 22
+
+student2_name = "Amit"
+student2_age = 23
 
 
 Imagine doing this for 1,000 students!
