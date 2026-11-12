@@ -19,7 +19,58 @@ objects that contain data and behaviour.
 real-world concepts, and maintain larger programs.
 
 Example: A `BankAccount` has data such as account holder and balance,
-and behaviour such as deposit and withdraw.
+and behaviour such as deposit and withdraw. 
+
+It is a programming paradigm in which we organise code around objects rather than just functions.
+
+An object contains:
+- Data (Attributes)
+- Behaviour (Methods)
+For example:
+
+A student has:
+- Name
+- Age
+- Roll number
+And can perform actions:
+- Study
+- Attend class
+- Submit assignments
+That's the basic idea of OOPs.
+2. Classes and Objects (3 minutes)
+These are the most fundamental concepts of OOPs.
+What is a Class?
+A class is a blueprint or template used to create objects.
+
+Example:
+
+Think about a house blueprint.
+
+A blueprint describes:
+- Number of rooms
+- Doors
+- Windows
+- Structure
+But the blueprint itself isn't a physical house.
+
+Similarly, a class defines the structure and behaviour of objects.
+What is an Object?
+An object is an instance of a class.
+
+Let's see this in Python.
+class Student:    def study(self):        print("Student is studying")student1 = Student()student2 = Student()student1.study()student2.study()
+
+
+Output:
+Student is studying
+Student is studying
+
+Explanation:
+- class Student → Defines a class.
+- student1 → First object.
+- student2 → Second object.
+- study() → Method.
+- self → Refers to the current object.
 
 ## 2. Class and Object
 
