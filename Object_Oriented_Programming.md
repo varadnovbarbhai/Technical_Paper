@@ -387,7 +387,21 @@ payment = UpiPayment()
 payment.pay(500)
 ```
 
-**Output:** `Paid 500 using UPI`
+"Python provides a module called abc, which stands for Abstract Base Classes. 
+
+We import two things:
+1. ABC – To create an abstract class.
+2. abstractmethod – To define a method that child classes must implement."
+
+->Payment is abstract class that we have created 
+->There is an abstract method called pay(), which accepting an amount.
+-> Pass is just a placeholder currently no implementation  
+
+->UpiPayment inherits from the Payment class. -
+This demonstrates abstraction because we define what operation should be performed without exposing the implementation details to the user."
+
+
+**Output:** `Paid 500 using UPI.`
 
 ABC allows us to create abstract base classes.
 @abstractmethod declares a method that concrete subclasses must implement.
