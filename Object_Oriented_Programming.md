@@ -358,6 +358,14 @@ polymorphism = Same interface, different behaviour.
 
 ## 10. Abstraction
 
+Imagine you're driving a car.
+
+You have:
+- Accelerator
+- Brake
+- Steering wheel
+You know WHAT these controls do, but you don't need to know HOW the engine, braking system or steering mechanism works internally.
+
 Hiding implementation details and exposing only essential functionality.
 
 ```python
@@ -386,6 +394,12 @@ ABC allows us to create abstract base classes.
 
 A class with unimplemented abstract methods cannot be instantiated. A
 concrete child class must implement them.
+
+
+Difference Between Encapsulation and Abstraction 
+
+Abstraction -> Hide complexity
+Encapsulation -> Protect internal data
 
 ------------------------------------------------------------------------
 
